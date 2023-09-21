@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Color picker" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Color Picker</title>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1 class="title">Color Picker</h1>
+        
+            <div class="container-input">
+                <div class="text-color">
+                    <label for="hex">Color (Hex)</label>
+                    <input type="text" name="hex" id="hexInput" value="#c6d5ac" placeholder="#000000"/>
+
+                </div>
+
+                <div class="toggle">
+                    <p id="lightenText" class="toggle-text unselected">Lighten</p>
+                    <div id="toggleBtn" class="toggle-btn toggled">
+                        <div class="inner-circle">
+
+                        </div>
+                    </div>
+                    <p id="darkenText" class="toggle-text">Darken</p>
+                </div>
+                <div class="color-slider">
+                    <label for="slider" id="sliderText">0%</label>
+                    <input type="range" name="slider" id="slider" min="0" max="100" class="slider" value="0" />
+                </div>
+            </div>
+            <p>Input Color</p>
+            <div id="inputColor" class="box"></div>
+            <p id="alterText">Alterd Color</p>
+            <div id="alterdColor" class="box"></div>
+        </div>
+
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

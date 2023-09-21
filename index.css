@@ -1,0 +1,98 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #3e4560;
+    color: white;
+}
+
+.container {
+    padding:  40px;
+}   
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    color: #d6d5ac;
+}
+
+.text-color{
+
+    padding :5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+}
+
+
+.color-slider{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px 10px;
+
+}
+
+label{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.box{
+
+    height: 100px;
+    width: 100%;
+    background-color: #c6d5ac;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+
+.toggle{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+  
+}
+
+.toggle-btn{
+
+    background-color: gray;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 10px;
+
+}
+
+.toggle-text{
+
+    font-size: 18px;
+}
+
+.inner-circle{
+    border-radius: 50%;
+    background-color:ivory;
+    height: 30px;
+    width: 30px;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle{
+
+    transform: translateX(30px);
+    background-color: #333;
+}
+
+.unselected{
+    opacity: 0.25;
+}
